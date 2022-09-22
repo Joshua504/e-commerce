@@ -50,7 +50,7 @@ nav ul li a {
     color: black;
 }
 nav input{
-    margin-top: 2em;
+    margin: 2em 0 0 8em;
     padding-left: 1em;
     height: 7vh;
     border: 1px solid #E5E5E5;
@@ -74,7 +74,15 @@ nav button{
     cursor: pointer;
 }
 nav a img{
-    margin-top: 1.5em;
+    position: relative;
+    top: 1em;
+    left: 7em;
+}
+#check{
+    display: none;
+}
+label{
+    display: none;
 }
 /* end */
 /* landing-styling */
@@ -227,6 +235,9 @@ footer section{
     display: flex;
     justify-content: space-between;
 }
+footer .icons{
+    flex-direction: column;
+}
 footer h1{
     font-size: 2em;
     color: #E5E5E5;
@@ -266,3 +277,150 @@ footer h4{
     text-align: center;
 }
 /* end */
+@media screen and (max-width:480px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        margin-top: .5em;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        background: #C3C3C3;
+        text-align: center;
+    }
+    nav ul li:hover::after{
+        content:'' ;
+        display: none;
+    }
+    nav input{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    label{
+        position: absolute;
+        right: 0em;
+        margin-right: .5em;
+        display: inline-block;
+        font-size: 3em;
+        background: #FF728E;
+        border: 1px solid black;
+    }
+    #burger input:checked ~ #links{
+        display: block;
+    }
+    nav a img{
+        position: relative;
+        top: 0em;
+        left: 0em;
+    }
+    .land{
+        flex-direction: column-reverse;
+        width: 110%;
+        margin: 0;
+        padding: 0em;
+        border-radius: 0px;
+    }
+    .land h1{
+        margin:1.5em 1em 1em 0em;
+        font-size: 1.8rem;
+        margin: 1em;
+    }
+    .land button{
+        height: 7vh;
+        margin: 0 .5em 1em 3em;
+    }
+    .land .banner{
+        padding: 2em 0 0 2em;
+        height: 30vh;
+        border-radius: 0;
+    }
+    .land .social{
+        display: none;
+    }
+    .category h1{
+        text-align: center;
+    }
+    .category ul{
+        display: flex;
+        list-style: none;
+    }
+    .category ul li{
+        padding: 2em 1.3em;
+    }
+    .gagdet{
+        display: none;
+    }
+    .category ul li:hover::after{
+        content:'' ;
+        display: none;
+    }
+    .category ul li a{
+        font-size: 1.5rem;
+    }
+    .category ul li a span{
+        display: none;
+    }
+    section .item1{
+        flex-direction: column;
+        margin: 0em 0em;
+    }
+    section .item1 .sub{
+        margin-left: 4em;
+        padding: 2em;
+        margin-bottom: 1em;
+    }
+    section .item1 .sub .items{
+        height: 31vh;
+    }
+    section .item1 .sub .items:hover{
+        transform: none;
+    }
+    .discover{
+       flex-direction: column-reverse;
+        width: 110%;
+        margin: 3em 0em;
+        border-radius: 0px;
+    }
+    .discover h1{
+        margin-top: 2em;
+        margin-left: .5em;
+        font-size: 2rem;
+    }
+    .discover p{
+        margin-left: .8em;
+    }
+    .discover button{
+        height: 7vh;
+        margin-left: 1em;
+    }
+    .discover img{
+        bottom: -3em;
+        transform: none;
+    }
+    footer{
+        width: 75%;
+    }
+    footer section{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .icons{
+        margin-bottom: 1em;
+    }
+    footer h1{
+        font-size: 3em;
+        color: #E5E5E5;
+    }
+    footer p:hover::after{
+        content: '';
+        display: none;
+    }
+}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 .6em 0 .6em;
+}
+/* nav-styling */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 0 2em 0;
+}
+nav h1{
+    font-size: 4rem ;
+}
+nav span{
+    color: #FF728E;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0.7em;
+}
+nav ul li {
+    font-size: 1.7em;
+    padding: .7em;
+}
+nav ul li::after{
+    content:'' ;
+    height: 1px;
+    width: 0%;
+    background: #FF728E;
+    transition: .5s ease-out;
+}
+nav ul li:hover::after{
+    content:'' ;
+    height: 1px;
+    width: 100%;
+    background: #FF728E;
+    display: block;
+}
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+#check{
+    display: none;
+}
+label{
+    display: none;
+}
+span{
+    color: #FF728E;
+}
+/* end */
+/* items-styling */
+section .item1{
+    display: flex;
+    margin: 5em 4em;
+}
+section .header{
+    margin-left: 1em;
+    font-size: 2rem;
+}
+section .item1 .sub{
+    margin-right: .8em;
+    padding: 1.2em;
+    background: rgb(195, 195, 195);
+    border-radius: 15px;
+}
+section .item1 .sub .items{
+    height: 40vh;
+    border-radius: 16px;
+    transition: .5s ease-in-out;
+}
+section .item1 .sub .items:hover{
+    transform: scale(1.1);
+}
+section .sub .prize{
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5em;
+}
+/* end */
+/* footer-styling */
+footer{
+    margin: 0 -.6em;
+    padding: 5em;
+    background: #3F414D;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+}
+footer .icons{
+    flex-direction: column;
+}
+footer h1{
+    font-size: 2em;
+    color: #E5E5E5;
+}
+footer span{
+    color: #FF6584;
+}
+footer h2{
+    font-size: 1.3em;
+    color: #E5E5E5;
+}
+footer p{
+    line-height: 2em;
+}
+footer p::after{
+    content: '';
+    height: 1px;
+    width: 0%;
+    background: #FF6584;
+    transition: .5s ease-out;
+}
+footer p:hover::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #FF6584;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer h4{
+    position: relative;
+    top: 3em;
+    color: white;
+    text-align: center;
+}
+/* end */
+@media screen and (max-width:480px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        margin-top: .5em;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        background: #C3C3C3;
+        text-align: center;
+    }
+    nav ul li:hover::after{
+        content:'' ;
+        display: none;
+    }
+    nav input{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    label{
+        position: absolute;
+        right: 0em;
+        display: inline-block;
+        font-size: 3em;
+        background: #FF728E;
+        border: 1px solid black;
+    }
+    #burger input:checked ~ #links{
+        display: block;
+    }
+    section .item1{
+        flex-direction: column;
+        margin: 1em 0em;
+    }
+    section .header{
+        margin-left: .5em;
+        font-size: 1.6rem;
+    }
+    section .item1 .sub{
+        margin: 0em 4em;
+        margin-bottom: 1em;
+    }
+    section .item1 .sub .items{
+        height: 28vh;
+    }
+    section .item1 .sub .items:hover{
+        transform: none;
+    }
+    footer section{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .icons{
+        margin-bottom: 1em;
+    }
+    footer h1{
+        font-size: 3em;
+        color: #E5E5E5;
+    }
+    footer p:hover::after{
+        content: '';
+        display: none;
+    }
+}

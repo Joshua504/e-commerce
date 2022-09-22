@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <section class="container">
-        <nav>
+    <section class="container">  
+        <nav id="burger">
+            <label for="check">&#9776</label>
+            <input type="checkbox" name="" id="check">
             <h1><span>E</span>-Mall</h1>
-             <ul>
+            <ul id="links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="product.html">Products</a></li>
                 <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="#"><img src="./icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
             </ul>
             <input type="text" placeholder=" &#xf002; search" name="" id="">
             <button>Search</button>
-            <a href="#"><img src="./icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" alt=""></a>
+           
+            
         </nav>
         <!-- landing -->
         <section class="land">
@@ -29,7 +33,7 @@
                 <button>Shop</button>
                 <button>Cart</button>
             </div>
-            <img class="banner" src="./earpods/images.jfif" alt="">
+            <img class="banner" src="./gagdets/images.jfif" alt="">
             <div class="social">
                 <div>
                     <a href="#"> <img src="./icons/icons8-instagram-30.png" alt=""></a>
@@ -46,19 +50,19 @@
         <div class="category">
             <h1>Catigories</h1>
             <ul>
-                <li><a href="">Cloths</a></li>
-                <li><a href="">Shoes</a></li>
-                <li><a href="">Phones</a></li>
-                <li><a href="">Phone assesories</a></li>
-                <li><a href="">Watch</a></li>
-                <li><a href=""> <span> See more</span></a></li>
+                <li><a href="product.html">Cloths</a></li>
+                <li><a href="product.html">Shoes</a></li>
+                <li><a href="product.html">Phones</a></li>
+                <li class="gagdet"><a href="product.html">Phone assesories</a></li>
+                <li><a href="product.html">Watch</a></li>
+                <li><a href="product.html"> <span> See more</span></a></li>
             </ul>
         </div>
         <!-- items -->
         <section>
             <section class="item1">
                 <div class="sub">
-                    <img class="items" src="./phone/100-New-Original-Samsung-Galaxy-A73-5G-Smartphone-Snapdragon-778G-120Hz-Super-AMOLED-Plus-5000mAh-Battery.jpg_220x220xz.jpg_.jpg" alt="">
+                    <img class="items" src="./gagdets/100-New-Original-Samsung-Galaxy-A73-5G-Smartphone-Snapdragon-778G-120Hz-Super-AMOLED-Plus-5000mAh-Battery.jpg_220x220xz.jpg_.jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Samsung mobile</h1>
@@ -78,7 +82,7 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img class="items" src="./sweater/Men-s-Baseball-jacket-fashion-Cotton-University-campus-baseball-uniform-women-s-baseball-jacket-custom-solid.jpg_220x220xz.jpg_.jpg" alt="">
+                    <img class="items" src="./cloths/Men-s-Baseball-jacket-fashion-Cotton-University-campus-baseball-uniform-women-s-baseball-jacket-custom-solid.jpg_220x220xz.jpg_.jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Baseball Jacket</h1>
@@ -88,7 +92,7 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img class="items" src="./nike/Original-Nike-Court-Borough-Mid-2-GS-Sports-Shoes-White-CD7782-110-Children-Shoes.jpg_220x220xz.jpg_ (1).jpg" alt="">
+                    <img class="items" src="./shoes/Original-Nike-Court-Borough-Mid-2-GS-Sports-Shoes-White-CD7782-110-Children-Shoes.jpg_220x220xz.jpg_ (1).jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Nike Court</h1>
@@ -101,7 +105,7 @@
 
             <section class="item1">
                 <div class="sub">
-                    <img class="items" src="./women watch/Diamond-Women-Watches-Gold-Watch-Ladies-Wrist-Watches-Luxury-Brand-Rhinestone-Women-s-Bracelet-Watches-Female.jpg_220x220xz.jpg_.jpg" alt="">
+                    <img class="items" src="./watch/Diamond-Women-Watches-Gold-Watch-Ladies-Wrist-Watches-Luxury-Brand-Rhinestone-Women-s-Bracelet-Watches-Female.jpg_220x220xz.jpg_.jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Rhinestone-Watch</h1>
@@ -111,7 +115,7 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img class="items" src="./women top/Seamless-Crop-Top-Women-Underwear-Wire-Free-U-Shaped-Camisole-Wide-Straps-Striped-Solid-Bralette-Lingerie.jpg_220x220xz.jpg_.jpg" alt="">
+                    <img class="items" src="./cloths/Seamless-Crop-Top-Women-Underwear-Wire-Free-U-Shaped-Camisole-Wide-Straps-Striped-Solid-Bralette-Lingerie.jpg_220x220xz.jpg_.jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Women Crop-Top</h1>
@@ -121,7 +125,7 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img class="items" src="./hills/Fashion-New-2022-Super-High-Stiletto-Heels-Pumps-Women-Shoes-Open-Toe-Strappy-Sandals-Sexy-Ladies.jpg_220x220xz.jpg_.jpg" alt="">
+                    <img class="items" src="./shoes/Fashion-New-2022-Super-High-Stiletto-Heels-Pumps-Women-Shoes-Open-Toe-Strappy-Sandals-Sexy-Ladies.jpg_220x220xz.jpg_.jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Stiletto-High</h1>
@@ -131,7 +135,7 @@
                     </div>
                 </div>
                 <div class="sub">
-                    <img class="items" src="./earpods/download (15).jpg" alt="">
+                    <img class="items" src="./gagdets/download (15).jpg" alt="">
                     <div class="prize">
                         <div>
                             <h1>Oraimo speaker</h1>
@@ -152,9 +156,9 @@
             <img src="./icons/Nile-Symbol.png" alt="">
         </section>
         <!-- footer -->
-        <footer>
+        <footer id="contact">
             <section>
-                <div>
+                <div class="icons">
                     <h1><span>E</span>-Mall</h1>
                     <img src="./icons/icons8-facebook-30.png" alt="">
                     <img src="./icons/icons8-instagram-30.png" alt="">
@@ -162,17 +166,17 @@
                 </div>
                 <div>
                     <h2>Shop</h2>
-                    <p><a href="">Contact</a></p>
-                    <p><a href="">Services</a></p>
-                    <p><a href="">Location</a></p>
-                    <p><a href="">FAQ</a></p>
+                    <p><a href="#">Contact</a></p>
+                    <p><a href="#">Services</a></p>
+                    <p><a href="#">Location</a></p>
+                    <p><a href="#">FAQ</a></p>
                 </div>
                 <div>
                     <h2>Links</h2>
-                    <p><a href="">Cloths</a></p>
-                    <p><a href="">Shoes</a></p>
-                    <p><a href="">Gadgets</a></p>
-                    <p><a href="">Watch</a></p>
+                    <p><a href="#">Cloths</a></p>
+                    <p><a href="#">Shoes</a></p>
+                    <p><a href="#">Gadgets</a></p>
+                    <p><a href="#">Watch</a></p>
                 </div>
                 <div>
                     <h2>Contact</h2>
