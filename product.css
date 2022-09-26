@@ -97,6 +97,11 @@ footer section{
     display: flex;
     justify-content: space-between;
 }
+footer .services{
+    display: flex;
+    text-align: center;
+    gap: 8em;
+}
 footer .icons{
     flex-direction: column;
 }
@@ -179,18 +184,17 @@ footer h4{
     }
     section .item1{
         flex-direction: column;
-        margin: 1em 0em;
-    }
-    section .header{
-        margin-left: .5em;
-        font-size: 1.6rem;
+        margin: 0em 0em;
+        margin-left: .4em;
+        width: 100%;
     }
     section .item1 .sub{
-        margin: 0em 4em;
+        text-align: center;
+        justify-content: center;
         margin-bottom: 1em;
     }
     section .item1 .sub .items{
-        height: 28vh;
+        height: 41vh;
     }
     section .item1 .sub .items:hover{
         transform: none;
@@ -202,6 +206,12 @@ footer h4{
     footer .icons{
         margin-bottom: 1em;
     }
+    .services{
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        padding-bottom: 1em;
+    }
     footer h1{
         font-size: 3em;
         color: #E5E5E5;
@@ -210,4 +220,7 @@ footer h4{
         content: '';
         display: none;
     }
+}
+footer h4{
+    font-size: .8em;
 }

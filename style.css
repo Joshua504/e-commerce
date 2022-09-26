@@ -8,6 +8,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0 .6em 0 .6em;
+    width: 100%;
 }
 /* nav-styling */
 nav{
@@ -56,7 +57,6 @@ nav input{
     border: 1px solid #E5E5E5;
     outline: none;
     border-radius: 30px;
-    font-family:'font awesome 5 free';
     font-weight: 700;
 } 
 nav button{
@@ -92,9 +92,10 @@ label{
     margin: 0 1.5em;
     padding: 2em;
     border-radius: 15px;
+    /* width: 100%; */
 }
 .land h1{
-    margin:1.5em 1em 1em 0em;
+    margin: 3.5em 1em 1em 0em;
     font-size: 2.3rem;
 }
 .land button{
@@ -112,7 +113,7 @@ label{
 }
 .land .banner{
     margin-right: 2em;
-    height: 50vh;
+    height: 58vh;
     border-radius: 15px;
 }
 .land .social{
@@ -219,8 +220,6 @@ section .sub .prize{
     background: #FF6584;
 }
 .discover img{
-    position: relative;
-    bottom: 4em;
     height: 40vh;
     transform: rotate(-5deg);
 }
@@ -234,6 +233,11 @@ footer{
 footer section{
     display: flex;
     justify-content: space-between;
+}
+footer .services{
+    display: flex;
+    text-align: center;
+    gap: 8em;
 }
 footer .icons{
     flex-direction: column;
@@ -285,6 +289,7 @@ footer h4{
     nav{
         flex-direction: column;
         margin-top: .5em;
+        width: 100%;
     }
     nav ul{
         display: none;
@@ -307,7 +312,7 @@ footer h4{
     label{
         position: absolute;
         right: 0em;
-        margin-right: .5em;
+        margin-right: .1em;
         display: inline-block;
         font-size: 3em;
         background: #FF728E;
@@ -323,19 +328,21 @@ footer h4{
     }
     .land{
         flex-direction: column-reverse;
-        width: 110%;
+        width: 100%;
         margin: 0;
         padding: 0em;
         border-radius: 0px;
     }
     .land h1{
-        margin:1.5em 1em 1em 0em;
-        font-size: 1.8rem;
+        /* margin:1.5em 1em 1em 0em; */
+        text-align: center;
+        font-size: 1.4rem;
         margin: 1em;
     }
     .land button{
-        height: 7vh;
-        margin: 0 .5em 1em 3em;
+        height: 6vh;
+        margin: 0 0em 1em 2em;
+
     }
     .land .banner{
         padding: 2em 0 0 2em;
@@ -347,13 +354,14 @@ footer h4{
     }
     .category h1{
         text-align: center;
+        width: 100%;
     }
     .category ul{
         display: flex;
         list-style: none;
     }
     .category ul li{
-        padding: 2em 1.3em;
+        padding: 2em .9em;
     }
     .gagdet{
         display: none;
@@ -371,46 +379,53 @@ footer h4{
     section .item1{
         flex-direction: column;
         margin: 0em 0em;
+        margin-left: .4em;
+        width: 100%;
     }
     section .item1 .sub{
-        margin-left: 4em;
-        padding: 2em;
+        text-align: center;
+        justify-content: center;
         margin-bottom: 1em;
     }
     section .item1 .sub .items{
-        height: 31vh;
+        height: 41vh;
     }
     section .item1 .sub .items:hover{
         transform: none;
     }
     .discover{
        flex-direction: column-reverse;
-        width: 110%;
-        margin: 3em 0em;
+        width: 100%;
+        margin: 1.5em 0em 0em 0em;
         border-radius: 0px;
     }
     .discover h1{
-        margin-top: 2em;
-        margin-left: .5em;
         font-size: 2rem;
+        text-align: center;
     }
     .discover p{
-        margin-left: .8em;
+        text-align: center;
     }
     .discover button{
         height: 7vh;
-        margin-left: 1em;
+        margin-left: 8.7em;
     }
     .discover img{
         bottom: -3em;
         transform: none;
     }
     footer{
-        width: 75%;
+        width: 61.5%;
     }
     footer section{
         flex-direction: column;
         text-align: center;
+    }
+    .services{
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        padding-bottom: 1em;
     }
     footer .icons{
         margin-bottom: 1em;
@@ -422,5 +437,8 @@ footer h4{
     footer p:hover::after{
         content: '';
         display: none;
+    }
+    footer h4{
+        font-size: .8em;
     }
 }
